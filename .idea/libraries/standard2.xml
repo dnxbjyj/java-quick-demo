@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="standard2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spi-demo/module/standard/standard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

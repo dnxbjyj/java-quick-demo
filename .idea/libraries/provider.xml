@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="provider">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spi-demo/module/provider/provider.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
