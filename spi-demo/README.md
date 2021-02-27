@@ -20,14 +20,44 @@ jar cvfm standard.jar src/main/resources/META-INF/MANIFEST.MF -C target/ .
 ```
 
 ## 编译、打包`provider.jar`
+以下操作都是基于provider根路径。
 
-```
+- 编译源代码，把编译结果class放到target目录，并指定外部依赖库路径lib：
+
+``` shell
 javac -d target -extdirs lib -encoding utf-8 src/main/java/com/provider/impl/*.java src/main/java/com/provider/*.java
+```
 
-java -cp . com.provider.SearchService
+- 把lib目录和META-INF目录复制到target目录，以在运行时能找到
 
-jar cvfm provider.jar src/main/resources/META-INF/MANIFEST.MF -C target/ .
+``` shell
+cp -r lib target/
+cp -r src/main/resources/META-INF target/
+```
 
+- 运行主类SearchService：
+
+``` shell
+java -cp target;target/lib/standard.jar com.provider.SearchService
+```
+
+输出结果：
+```
+start SearchService.search...
+search keyword: "my keyword" by FileSearcher...
+search keyword: "my keyword" by DatabaseSearcher...
+end SearchService.search
+```
+
+- 用jar打包，通过指定MANIFEST.MF文件（文件中指定了主类和依赖包）：
+
+``` shell
+jar cvfm provider.jar target/META-INF/MANIFEST.MF -C target/ .
+```
+
+- 运行jar包，输出结果和运行主类SearchService的结果一致
+
+``` shell
 java -jar provider.jar
 ```
 

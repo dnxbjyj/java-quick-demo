@@ -8,7 +8,7 @@ import com.standard.Searcher;
 public class FileSearcher implements Searcher {
     @Override
     public String search(String keyword) {
-        String res = "使用文件搜索器搜索关键词【" + keyword + "】的返回结果...";
+        String res = "search keyword: \"" + keyword + "\" by FileSearcher...";
         return res;
     }
 }

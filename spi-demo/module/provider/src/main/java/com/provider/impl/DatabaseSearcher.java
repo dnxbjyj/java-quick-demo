@@ -8,7 +8,7 @@ import com.standard.Searcher;
 public class DatabaseSearcher implements Searcher {
     @Override
     public String search(String keyword) {
-        String res = "使用数据库搜索器搜索关键词【" + keyword + "】的返回结果...";
+        String res = "search keyword: \"" + keyword + "\" by DatabaseSearcher...";
         return res;
     }
 }
