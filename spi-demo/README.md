@@ -115,7 +115,7 @@ java -jar caller.jar "com.provider.impl.DatabaseSearcher" "apple"
 ```
 
 # 思维导图总结
-![](./img/spi-framework.png)
+![](img/spi-framework.png)
 
 # 问题总结
 ## `Could not find or load main class`错误
