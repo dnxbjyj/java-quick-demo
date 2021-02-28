@@ -13,6 +13,8 @@ Main-Class: com.demo.portal.Main
 
 ```
 
+注：最后需要有一个空白行。
+
 - 在根目录下创建`target`目录。
 
 - 在根目录下执行下面命令进行编译：
@@ -54,5 +56,6 @@ java -jar jar-package-demo.jar 123 456 abc
 
 # 参考资料
 - [JAR-使用JAVA命令编译打包一个可执行jar包](https://www.cnblogs.com/forest-xs/p/jar-package-example.html)
+- [抛开IDE，了解一下javac如何编译](https://imshuai.com/using-javac)
 - [Download Apache Commons Lang](https://commons.apache.org/proper/commons-lang/download_lang.cgi)
 - [Apache Commons Lang 3.11 API](https://commons.apache.org/proper/commons-lang/javadocs/api-release/index.html)

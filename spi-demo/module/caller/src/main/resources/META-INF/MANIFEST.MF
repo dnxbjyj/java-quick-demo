@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: . ./lib/provider.jar ./lib/standard.jar
+Main-Class: com.caller.Main
+
