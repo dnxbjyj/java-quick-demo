@@ -1,0 +1,7 @@
+grant codeBase "jar:file:../third/-!/" {
+    permission java.io.FilePermission "D:/program/Git/usr/bin/touch.exe", "execute";
+};
+
+grant codeBase "file:target/-" {
+    permission java.security.AllPermission;
+};

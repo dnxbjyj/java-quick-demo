@@ -186,7 +186,7 @@ Error: Could not find or load main class com.caller.Main
 java -cp target;target/lib/provider.jar com.caller.Main
 ```
 
-## 在caller代码中调用provider的代码报错：``
+## 在caller代码中调用provider的代码报错
 使用下面的命令运行代码，在caller代码中有调用provider的代码：
 
 ``` shell
